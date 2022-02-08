@@ -7,13 +7,12 @@ import {
 } from "next";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
-import { Service } from "../types";
 
 const About: NextPage = () => {
 
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
-      <p className="my-3 text-base font-medium">
+      <p className="my-3 text-base font-extrabold">
         <p>A <span className="text-green" >Full stack Developer</span>, with proficient knowledge of the <span className="text-green">MERN</span> (MongoDB, ExpressJS, ReactJS, NodeJS) stack.</p>
 
         I am currently pursuing engineering (Third Year) in Computer Science from Pune university.

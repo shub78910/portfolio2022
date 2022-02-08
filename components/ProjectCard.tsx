@@ -25,7 +25,10 @@ const ProjectCard: FunctionComponent<{
                     src={image_path}
                     alt={name}
                     className="cursor-pointer"
-                    onClick={() => { setShowDetail(true); window.scroll(0, 0) }}
+                    onClick={() => {
+                        setShowDetail(true);
+                        document.querySelector(".projectsWrapper").scroll(0, 0)
+                    }}
                     layout="responsive"
                     height="150"
                     width="300"
