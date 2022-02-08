@@ -36,15 +36,15 @@ export const projects: IProject[] = [
     description:
       "A video library app with almost all features from YouTube. Uses the MERN stack, JWT based auth and bcrypt for password encryption.",
     image_path: "/assets/devplays.png",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    deployed_url: "https://devplays-shub78910.herokuapp.com",
+    github_url: "https://github.com/shub78910/devPlays",
     key_techs: ["MongoDB", "Express", "Node", "ReactJS"],
   },
   {
     name: "Chat app clone",
     image_path: "/assets/chat_app.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    deployed_url: "https://chat-app-clone-shub78910.web.app/",
+    github_url: "https://github.com/shub78910/Chat-App-clone",
     description:
       "A web app where in a user can login through google and chat with people in already made communities.",
     key_techs: ["React", "Firebase"],
@@ -74,8 +74,7 @@ export const projects: IProject[] = [
     image_path: "/assets/flip_card.png",
     deployed_url: "https://flip-card-memory-shub78910.netlify.app/",
     github_url: "https://github.com/shub78910/Flip-the-card-memory-game",
-    description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
+    description: "Flip the cards and try to match the cartoons!",
     key_techs: ["React"],
   },
 
