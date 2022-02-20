@@ -31,7 +31,9 @@ const ProjectCard: FunctionComponent<{
                     }}
                     layout="responsive"
                     height="150"
-                    width="300"
+                    width="250"
+                    objectFit="cover"
+
                 />
                 <p className="my-2 text-center">{name}</p>
 
@@ -45,7 +47,8 @@ const ProjectCard: FunctionComponent<{
                                 alt={name}
                                 layout="responsive"
                                 height="150"
-                                width="300"
+                                width="250"
+                                objectFit="cover"
                             />
                             <div className="flex justify-center my-4 space-x-3">
                                 <a
