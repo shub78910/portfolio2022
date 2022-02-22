@@ -3,9 +3,8 @@ import { Service } from '../types'
 // import { motion } from 'framer-motion'
 
 const ServiceCard: FunctionComponent<{ service: Service }> = ({
-    service: { Icon, title, about },
+    service: { Icon, title, about, link },
 }) => {
-    //XSS attack :( on our portfolio btw, as an alternate use npm i dom purify
     function createMarkup() {
         return {
             __html: about,
@@ -18,6 +17,7 @@ const ServiceCard: FunctionComponent<{ service: Service }> = ({
             <div className=''>
                 <h6 className='font-bold'>{title}</h6>
                 <p dangerouslySetInnerHTML={createMarkup()} />
+                {link && <a style={{ color: "olive" }} href={link} >Click for more</a>}
             </div>
         </div>
     )

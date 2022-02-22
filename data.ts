@@ -1,20 +1,15 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
+import { AiOutlineApi } from "react-icons/ai";
+import { FcReading } from "react-icons/fc";
+import { ImBlog } from "react-icons/im";
 import { IProject, Service } from "./types";
 
 export const services: Service[] = [
   {
     Icon: RiComputerLine,
-    title: "Frontend Development",
+    title: "Fullstack Development",
     about:
-      "I can build a beautiful and scalable SPA's using <b>HTML</b>, <b>CSS</b> and <b>React.js</b> ",
-  },
-  {
-    Icon: FaServer,
-    title: "Backend  Development",
-    about: "Build and handle API's, database, server using <b>ExpressJS</b>",
+      "I can build a beautiful and scalable SPA's using <b>HTML</b>, <b>CSS</b> and <b>React.js</b> along with making and testing API's and servers using Node and Exress JS ",
   },
   {
     Icon: AiOutlineApi,
@@ -23,10 +18,18 @@ export const services: Service[] = [
       "Currently interning at a company based in Pune as a <b>software developer intern.</b>",
   },
   {
-    Icon: MdDeveloperMode,
+    Icon: FcReading,
     title: "Read and host reading sessions",
     about:
       "I like to read and therefore have been hosting reading sessions on a discord server.",
+    link: "https://tanvi-neogcamp.notion.site/DevReads-Book-Reading-Event-e8a22e79ea9f4e6f98883b155eda7d72",
+  },
+  {
+    Icon: ImBlog,
+    title: "Write blogs",
+    about:
+      "I write blogs related to my experiences with code, science, books and treks.",
+    link: "https://shubhamhirakki.substack.com/",
   },
 ];
 

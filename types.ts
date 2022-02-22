@@ -3,6 +3,7 @@ export interface Service {
   Icon: IconType;
   title: string;
   about: string;
+  link?: string;
 }
 
 export interface IProject {
