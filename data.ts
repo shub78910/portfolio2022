@@ -9,19 +9,19 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Fullstack Development",
     about:
-      "I can build a beautiful and scalable SPA's using <b>HTML</b>, <b>CSS</b> and <b>React.js</b> along with making and testing API's and servers using Node and Exress JS ",
+      "I can build beautiful and scalable SPA's using <b>HTML</b>, <b>CSS</b> and <b>React JS</b> along with making and testing API's and servers using <b>Node</b> and <b>Express JS</b>",
   },
   {
     Icon: AiOutlineApi,
     title: "Internship",
     about:
-      "Currently interning at a company based in Pune as a <b>software developer intern.</b>",
+      "Currently interning at a UK based startup as a <b>software developer intern.</b>",
   },
   {
     Icon: FcReading,
     title: "Read and host reading sessions",
     about:
-      "I like to read and therefore have been hosting reading sessions on a discord server.",
+      "I like to read and therefore have been hosting reading sessions on a discord server with more than 20k learners.",
     link: "https://tanvi-neogcamp.notion.site/DevReads-Book-Reading-Event-e8a22e79ea9f4e6f98883b155eda7d72",
   },
   {
