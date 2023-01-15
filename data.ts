@@ -37,7 +37,7 @@ export const projects: IProject[] = [
   {
     name: "devPlays",
     description:
-      "A video library app with almost all features from YouTube. Uses the MERN stack, JWT based auth and bcrypt for password encryption.",
+      "A video library app with almost all features from YouTube. Uses the MERN stack, JWT based auth and bcrypt for password encryption. CURRENTLY THE SITE IS DOWN DUE TO END HEROKU FREE PLANS. LOOKING FOR AN ALTERNATIVE TO DEPLOY.",
     image_path: "/assets/devplays.png",
     deployed_url: "https://devplays-shub78910.herokuapp.com",
     github_url: "https://github.com/shub78910/devPlays",
