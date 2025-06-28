@@ -1,22 +1,8 @@
-import { RiComputerLine } from "react-icons/ri";
-import { AiOutlineApi } from "react-icons/ai";
 import { FcReading } from "react-icons/fc";
 import { ImBlog } from "react-icons/im";
 import { IProject, Service } from "./types";
 
 export const services: Service[] = [
-  {
-    Icon: RiComputerLine,
-    title: "Fullstack Development",
-    about:
-      "I can build beautiful and scalable SPA's using <b>HTML</b>, <b>CSS</b> and <b>React JS</b> along with making and testing API's and servers using <b>Node</b> and <b>Express JS</b>",
-  },
-  {
-    Icon: AiOutlineApi,
-    title: "Internship",
-    about:
-      "Currently interning at a UK based startup as a <b>software developer intern.</b>",
-  },
   {
     Icon: FcReading,
     title: "Read and host reading sessions",

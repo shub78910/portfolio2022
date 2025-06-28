@@ -1,80 +1,73 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaGoodreads } from "react-icons/fa";
-import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
-import { useTheme } from "next-themes";
-import Styles from "../styles/modeSlider.module.css"
-
-import Image from "next/image";
+import { MdPhone, MdEmail, MdLanguage } from "react-icons/md";
+import { motion } from "framer-motion";
+import { GiTie } from "react-icons/gi";
 
 const Sidebar = () => {
-    const { theme, setTheme } = useTheme();
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -32 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h3 className="my-4 text-3xl font-medium tracking-wider">
+        <span className="text-green">Shubham</span> Hirakki
+      </h3>
 
-    const changeTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
-    };
+      {/* Socials */}
+      <div className="flex justify-around mx-auto my-5 w-9/12 text-green md:w-full">
+        <motion.a
+          href="https://www.linkedin.com/in/shubham-hirakki-39186619b/"
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+        </motion.a>
+        <motion.a
+          href="https://github.com/shub78910"
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+        </motion.a>
+        <motion.a
+          href="https://www.goodreads.com/user/show/113426018-shubham-hirakki"
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <FaGoodreads className="w-8 h-8 cursor-pointer" />
+        </motion.a>
+      </div>
 
-    return (
-        <>
-            <div className="my-5">
-                <h4 className="my-2">Toggle theme</h4>
-                <label className={`${Styles.theme_switch}`}>
-                    <input type="checkbox" id="checkbox" onClick={changeTheme}
-                        className="w-8/12 px-5 py-2 my-4 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500 to-green-500 focus:outline-none hover:scale-105 " />
-                    <div className={`${Styles.slider} ${Styles.round}`}></div>
-                </label>
-            </div>
+      {/* Contacts */}
+      <div
+        className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500"
+        style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
+      >
+        <div className="flex justify-center items-center">
+          <GoLocation className="mr-2" /> <span>Mumbai, India </span>
+        </div>
+        <div className="flex justify-center items-center mt-2">
+          <MdPhone className="mr-2" /> <span>+91-8291027138</span>
+        </div>
+        <div className="flex justify-center items-center mt-2">
+          <MdEmail className="mr-2" /> <span>shubhamhirakki@gmail.com</span>
+        </div>
+      </div>
 
-            <Image
-                src="/assets/shubham-profile.jpg"
-                alt="avatar"
-                className="mx-auto border rounded-full "
-                height="130rem"
-                width="180rem"
-                layout="intrinsic"
-                quality="100"
-            />
-            <h3 className="my-4 text-3xl font-medium tracking-wider">
-                <span className="text-green ">Shubham</span> Hirakki
-            </h3>
-            <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
-                Web Developer
-            </p>
-            {/* Resume */}
-            <a
-                href="/assets/Shubham Hirakki Resume.pdf"
-                download="Shubham Hirakki Resume.pdf"
-                className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
-            >
-                <GiTie className="w-6 h-6" />
-                <span>Download Resume</span>
-            </a>
-
-            {/* Socials */}
-            <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
-                <a href="https://www.goodreads.com/user/show/113426018-shubham-hirakki">
-                    <FaGoodreads className="w-8 h-8 cursor-pointer" />
-                </a>
-                <a href="https://www.linkedin.com/in/shubham-hirakki-39186619b/" >
-                    <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
-                </a>
-                <a href="https://github.com/shub78910">
-                    <AiFillGithub className="w-8 h-8 cursor-pointer" />{" "}
-                </a>
-            </div>
-
-            {/* Contacts */}
-            <div
-                className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500"
-                style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
-            >
-                <div className="flex items-center justify-center">
-                    <GoLocation className="mr-2" /> <span>Mumbai, India </span>
-                </div>
-                <p className="my-2">shubhamhirakki@gmail.com</p>
-            </div>
-        </>
-    );
+      <motion.a
+        href="/assets/Shubham-Resume-2025.pdf"
+        download="Shubham-Resume-2025.pdf"
+        className="px-8 py-2 m-auto my-2 w-full text-sm font-medium bg-gray-100 rounded-xl border border-gray-300 shadow-sm transition-colors duration-200 hover:bg-gray-200 dark:bg-dark-200 dark:hover:bg-dark-100 dark:border-dark-100"
+        whileHover={{ scale: 1.06 }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <span className="opacity-80">Download Resume</span>
+      </motion.a>
+    </motion.div>
+  );
 };
 
 export default Sidebar;
