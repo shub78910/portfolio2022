@@ -17,7 +17,7 @@ const Sidebar = () => {
       </h3>
 
       {/* Socials */}
-      <div className="flex justify-around mx-auto my-5 w-9/12 text-green md:w-full">
+      <div className="flex gap-4 justify-center mx-auto my-5 w-9/12 text-green md:w-full">
         <motion.a
           href="https://www.linkedin.com/in/shubham-hirakki-39186619b/"
           whileHover={{ scale: 1.15 }}

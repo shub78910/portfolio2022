@@ -10,7 +10,7 @@ const InfoList: React.FC<InfoListProps> = ({ title, items }) => (
   <section className="my-6">
     <div className="mt-4">
       <h3 className="font-semibold">{title}</h3>
-      <ul className="flex flex-wrap gap-4 list-disc list-inside">
+      <ul className="flex flex-col gap-1 list-disc list-inside">
         {items.map((item, i) => (
           <motion.li
             key={i}

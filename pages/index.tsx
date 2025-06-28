@@ -17,12 +17,11 @@ const About: NextPage = () => {
       >
         <h2 className="mb-2 text-xl font-bold">Summary</h2>
         <p className="text-base">
-          Frontend developer with <b>3+ years</b> of experience building{" "}
-          <b>scalable, accessible, and SEO-optimized SPAs</b> using{" "}
-          <b>TypeScript, React.js, and Next.js</b>. Strong focus on{" "}
-          <b>Core Web Vitals</b>, performance optimization, and responsive
-          design. Proven ability to work cross-functionally, lead features
-          end-to-end, and deliver business impact.
+          I build frontend stuff — mostly with React, Next.js, and TypeScript.
+          Been doing it for a few years now. Focus is usually on performance,
+          accessibility, and making sure things don’t break. Not really into
+          overcomplicating things. Just like clean, fast interfaces that do what
+          they’re supposed to. Occasionally care a lot about Core Web Vitals.
         </p>
       </motion.section>
 
@@ -87,29 +86,6 @@ const About: NextPage = () => {
         transition={{ duration: 0.5 }}
       >
         <SkillsSection />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5 }}
-      >
-        <InfoList
-          title="Languages"
-          items={["English", "Hindi", "Kannada", "Marathi"]}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5 }}
-      >
-        <InfoList
-          title="Interests"
-          items={["Running", "Lifting", "Trekking", "Swimming"]}
-        />
       </motion.div>
 
       <div
