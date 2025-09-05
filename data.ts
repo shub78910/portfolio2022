@@ -21,6 +21,15 @@ export const services: Service[] = [
 
 export const projects: IProject[] = [
   {
+    name: "vChat",
+    description:
+      "A p2p live video calling app. Made this to play around and understand the basics of webRTC and WebSockets. Currently this app works on the same network, meaning 2 calls are connected only if on the same network. Will be adding functionality for multi network calling soon.",
+    image_path: "/assets/vChat.jpeg",
+    deployed_url: "https://vid-chat-two.vercel.app/",
+    github_url: "https://github.com/shub78910/vid-chat",
+    key_techs: ["NextJS", "ExpressJS", "Web sockets", "Web RTC", "Tailwind"],
+  },
+  {
     name: "devPlays",
     description:
       "A video library app with almost all features from YouTube. Uses the MERN stack, JWT based auth and bcrypt for password encryption. CURRENTLY THE SITE IS DOWN DUE TO END HEROKU FREE PLANS. LOOKING FOR AN ALTERNATIVE TO DEPLOY.",
